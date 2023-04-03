@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teachHub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="/static/css/main.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@500&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/2f5ed2258b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- NAV BAR -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
+        <div class="container px-5">
+            <a class="navbar-brand fw-bold" href="{{ url_for('main') }}">teach<span class="hub">Hub</span><img src="/static/img/flag-ukraine_1f1fa-1f1e6.png" class="flag-ukraine" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- <i class="bi-list"></i> -->
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0 navbar-links">
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="{{url_for('main')}}">Main</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="{{url_for('add')}}">Add</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HEADER -->
+    <header id="header" class="bg-dark py-5">
+        <div class="container px-4 px-lg-5 my-5">
+            <div class="text-center text-white">
+                <h1 class="display-4 fw-bolder title-main">Teach With Ease</h1>
+                <p class="lead fw-normal text-white-50 mb-0">ESL lesson plans for everyone</p>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="py-5">
+
+        <div class="container px-3 px-lg-4 mt-4">
+
+            <div class="row gx-4 gx-lg-5 row-cols-1 row-cols-md-3 row-cols-xl-3 justify-content-center">
+                {% for lesson in lessons %}
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <a class="delete-bt" href="{{url_for('delete', id=lesson.id) }}">✘</a>
+                        <img class="card-img-top picture" src="{{ lesson.img_url }}" alt="..." />
+                        
+
+
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div>
+                                <!-- Product name-->
+                                <a class="title-link" href="{{url_for('lesson', id=lesson.id)}}"><h4>{{lesson.title}}</h4></a>
+                                <!-- Product price-->
+                                <div class="main-tags">
+                                    <p class="ls-tag-lv">{{lesson.tag_level}}</p>
+                                    <p class="ls-tag-f">{{lesson.tag_field}}</p>
+                                </div>
+                                <!-- <div class="tags">
+                                    {% if lesson.tag_1 %}
+                                    <p class="ls-tag-other">{{lesson.tag_1}}</p>
+                                    {% endif %}
+                                    {% if lesson.tag_2 %}
+                                    <p class="ls-tag-other">{{lesson.tag_2}}</p>
+                                    {% endif %}
+                                    {% if lesson.tag_3 %}
+                                    <p class="ls-tag-other">{{lesson.tag_3}}</p>
+                                    {% endif %}
+                                    {% if lesson.tag_4 %}
+                                    <p class="ls-tag-other">{{lesson.tag_4}}</p>
+                                    {% endif %}
+                                </div> -->
+                                <p>{{lesson.sub_title|truncate(300, True, "...")}}</p>
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div><a class="btn btn-outline-dark mt-auto" href="{{ url_for('lesson', id=lesson.id) }}">Check it out</a></div>
+
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+
+        </div>
+
+    </section>
+
+ 
+    {% include 'footer.html' %}
+    
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</html>

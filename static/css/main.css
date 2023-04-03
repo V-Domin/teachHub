@@ -1,0 +1,477 @@
+h1 {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+    font-size: 3.3rem;
+    /* line-height: 1.5; */
+}
+
+h3 {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+    font-size: 1.9rem;
+    /* line-height: 1.5; */
+}
+
+nav {
+    background-color: white;
+}
+
+
+.navbar-links {
+    padding-right: 34px;
+}
+
+
+.flag-ukraine {
+    width: 10%;
+    padding-bottom: 3px;
+    padding-left: 5px;
+}
+
+p {
+    font-family: 'Mulish', sans-serif;
+    color: #8f8f8f;
+    line-height: 1.5;
+}
+
+/* main section */
+
+#main {
+    text-align: left;
+    padding: 14% 10% 10% 8%;
+}
+
+.main-intro {
+    padding: 0% 11% 1% 1%;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.slogan {
+    padding-bottom: 20px;
+}
+
+.description {
+    padding-bottom: 20px;
+}
+
+.lessons-button {
+    background-color: #00c9b7;
+    color: white;
+    font-family: 'Mulish', sans-serif;
+    font-size: 1.1rem;
+}
+
+.lessons-button:hover{
+    background-color: #02a395;
+    color: white;
+    font-family: 'Mulish', sans-serif;
+    font-size: 1.1rem;
+}
+
+
+.left-side {
+    position: relative;
+    padding-top: 20px;
+}
+
+.lesson-slide {
+    width: 100%;
+    /* border-radius: 15px; */
+
+}
+
+.laptop {
+    position: absolute;
+    width: 102%;
+    top: -13px;
+    right: 0px;
+}
+
+/* CAROUSEL SECTION */
+
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
+}
+
+#carouselExample {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  
+  .carousel-control-prev {
+    margin-left: -65px;
+  }
+  
+  .carousel-control-next {
+    margin-right: -55px;
+  }
+
+/* RESOLUTION SECTION */    
+
+#resolution {
+    background: rgb(0,201,183);
+    background: linear-gradient(24deg, rgba(0,201,183,1) 30%, rgba(0,131,221,1) 82%);
+}
+
+.resolution-text {
+    padding: 8% 14% 8% 14%;
+    color: white;
+    text-align: center;
+    font-size: 2.3rem;
+}
+
+/* ABOUT ME SECTION */
+
+
+#about {
+    padding: 10% 6% 10% 6%;
+}
+
+.img-me {
+    width: 80%;
+    padding-left: 120px;
+
+}
+
+
+.about-head {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+
+/* FEATURED SECTION */
+
+.img-teacher {
+    width: 60%;
+    border-radius: 14px;
+
+    box-shadow: rgba(0, 0, 0, 0.55) 5px 10px 20px;
+}
+
+#features {
+    padding: 6% 8% 6% 6%;
+    background-color: rgb(248, 249, 250);
+}
+
+.icon-feat {
+    font-size: 46px;
+    padding-bottom: 25px;
+    background: -moz-linear-gradient(top, #00c9b7 0%, #0083DD 100%);
+    background: -webkit-linear-gradient(top, #00c9b7 0%, #0083DD 100%);
+    background: linear-gradient(to bottom, #00c9b7 0%, #0083DD 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+i h3 .fa {
+    display: inline;
+    margin-left: 15px;
+  }
+
+.first-row {
+    padding-bottom: 38px;
+    padding-top: 43px;
+}
+
+/* CALL TO ACTIONS SECTION */
+
+section.cta {
+    position: relative;
+    padding: 15rem 0;
+    background-image: url("/static/img/laptop.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  section.cta .cta-content {
+    position: relative;
+    z-index: 1;
+  }
+section.cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+
+.cta-text {
+    padding-bottom: 15px;
+}
+
+.cta-button {
+    font-family: 'Mulish', sans-serif;
+    font-size: 1.1rem;
+}
+
+
+/* FOOTER */
+
+#footer {
+    background-color: #fff;
+}
+
+.icon-footer {
+    padding: 5% 1% 2% 2%;
+    font-size: 2rem;
+    background: -moz-linear-gradient(top, #00c9b7 0%, #0083DD 100%);
+    background: -webkit-linear-gradient(top, #00c9b7 0%, #0083DD 100%);
+    background: linear-gradient(to bottom, #00c9b7 0%, #0083DD 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.footer-text {
+    padding-bottom: 20px;
+}
+
+/* MAIN PAGE */
+
+.title-main {
+    padding-top: 35px;
+    font-size: 70px;
+}
+
+.lesson-card {
+    width: 300px;
+}
+
+.lesson-title {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+    font-size: 1.4rem;
+    padding-bottom: 10px;
+}
+
+.lesson-level {
+    display: inline;
+    padding-right: 25px;
+
+}
+
+.lesson-type {
+    display: inline;
+}
+
+
+.short-intro {
+    padding-top: 5px;
+}
+
+.ls-tag-lv {
+    display: inline;
+    margin-right: 20px;
+    background-color: #00c9b7;
+    border-radius: 20px;
+    padding: 2px 10px;
+    color: rgb(255, 255, 255);
+    
+}
+
+.ls-tag-f {
+    display: inline;
+    background-color: #00c9b7;
+    border-radius: 20px;
+    padding: 2px 10px;
+    color: rgb(255, 255, 255);
+}
+
+.main-tags {
+    margin-bottom: 26px;
+    
+}
+
+#header {
+    background: rgb(0,201,183);
+    background: linear-gradient(24deg, rgba(0,201,183,1) 30%, rgba(0,131,221,1) 82%);
+}
+
+.title-link {
+    color: black;
+    text-decoration: none;
+}
+
+.delete-bt {
+    text-decoration: none;
+    color: transparent;
+
+    position: absolute;
+    right: 10px;
+    
+}
+
+.delete-bt:hover{
+    color: #00c9b7;
+}
+
+
+/* LESSON PLAN PAGE */
+
+.teg{
+    background-color: #00c9b7;
+    border-radius: 20px;
+    font-size: 16px;
+    padding: 2px 10px;
+    font-weight: bold;
+}
+
+.lesson-title {
+    font-size: 45px;
+}
+
+.download-bts {
+    padding-top: 10px;
+}
+
+.download-bt {
+    margin-right: 5px;
+}
+
+.icon-bt {
+    font-size: 15px;
+    padding: 0;
+}
+
+.img-ls {
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    width: 90%;
+}
+
+.edit-icon {
+    font-size: 20px;
+    color: #212529;
+}
+
+
+/* FORM STYLE */
+
+/* Style the form container */
+form {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 3px;
+    font-size: 20px;
+  }
+  
+  /* Style the form group container */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  /* Style the form labels */
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  /* Style the form input fields */
+  input[type=text], 
+  select {
+    width: 100%;
+    padding: 3px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .form-control-body{
+    width: 100%;
+    padding: 3px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 180px;
+    font-size: 16px;
+  }
+
+.custom-button {
+    background-color: #00c9b7;
+}
+
+@media (max-width:1100px) {
+
+    #main {
+        text-align: center;
+        padding-top: 130px;
+        padding-bottom: 130px;
+    }
+
+    .slogan {
+        padding-bottom: 30px;
+    }
+
+    .description {
+        padding-bottom: 0;
+    }
+
+    #id.row {
+        flex-direction: column;
+    }
+    
+    .about-text {
+        order: 2;
+    }
+    
+
+    .lessons-button {
+        margin-bottom: 30px;
+    }
+
+    #resolution {
+        padding: 12% 4%;
+    }
+
+    .resolution-text {
+        font-size: 30px;
+        line-height: 1.5;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    #about {
+        text-align: center;
+        padding: 15% 6%;
+    }
+    
+    .img-me {
+        margin: 0 auto;
+        width: 50%;
+        padding-left: 0;
+    }
+
+    #about.container {
+        flex-direction: column-reverse;
+      }
+    
+
+    #features {
+        padding: 15% 4%;
+    }
+
+    .img-teacher {
+        display: none;
+    }
+
+    .lesson-title {
+        padding-top: 48px;
+        font-size: 38px;
+    }
+
+    .lesson-img {
+        display: none;
+    }
+
+}

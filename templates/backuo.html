@@ -1,0 +1,53 @@
+<section class="py-5">
+    <div class="container px-4 px-lg-5 my-5">
+        <div class="row gx-4 gx-lg-5 align-items-center">
+            <div class="col-md-6">
+                <img class="card-img-top mb-5 mb-md-0 img-ls" src="{{lesson.img_url_full}}" alt="..." />
+
+            </div>
+            
+            <div class="col-md-6">
+                <!-- <p class="small mb-1">{{lesson.date}}</p> -->
+                <h1 class="display-5 fw-bolder">{{lesson.title}}
+                    <a href="{{url_for('edit', id=lesson.id)}}"><i class="fa-solid fa-pen-to-square edit-icon"></i></a>
+                </h1>
+                <div class="fs-5 mb-5">
+                    <span class="teg">{{lesson.tag_level}}</span>
+                    <span class="teg">{{lesson.tag_field}}</span>
+                    {% if lesson.tag_1 %}
+                    <span class="teg">{{lesson.tag_1}}</span>
+                    {% endif %}
+
+                    {% if lesson.tag_2 %}
+                    <span class="teg">{{lesson.tag_2}}</span>
+                    {% endif %}
+
+                    {% if lesson.tag_3 %}
+                    <span class="teg">{{lesson.tag_3}}</span>
+                    {% endif %}
+
+                    {% if lesson.tag_4 %}
+                    <span class="teg">{{lesson.tag_4}}</span>
+                    {% endif %}
+                    
+                </div>
+                <p class="lesson-description">{{lesson.body|safe}} </p>
+
+                <div class="download-bts">
+                    <a href="{{lesson.student_v}}" type="button" class="btn btn-outline-dark download-bt">
+                        <i class="fa-solid fa-graduation-cap icon-bt"></i>
+                        Student Version</a>
+                    <a href="{{lesson.teacher_v}}" type="button" class="btn btn-outline-dark download-bt">
+                        <i class="fa-solid fa-chalkboard-user"></i>
+                        Teacher Version</a>
+                    <a href="{{lesson.presentation}}" type="button" class="btn btn-outline-dark download-bt">
+                        <i class="fa-sharp fa-solid fa-file-powerpoint"></i>
+                        E-lesson Plan</a>
+
+                </div>
+
+            </div>
+        </div>
+        <iframe width="450" height="315" src="https://www.youtube.com/embed/{{lesson.video_url}}" frameborder="0" allowfullscreen style="padding-top: 10px;"></iframe>
+    </div>
+</section>
