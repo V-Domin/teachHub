@@ -19,7 +19,7 @@
     </head>
 
     <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
-        <div class="container px-5">
+        <div class="container px-3">
             <a class="navbar-brand fw-bold" href="{{ url_for('main') }}">teach<span class="hub">Hub</span><img src="/static/img/flag-ukraine_1f1fa-1f1e6.png" class="flag-ukraine" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <!-- <i class="bi-list"></i> -->
@@ -41,7 +41,7 @@
             <div class="row gx-4 gx-lg-5  align-items-start">
                 <div class="col-md-6">
                     <img class="card-img-top mb-5 mb-md-0 img-ls lesson-img" src="{{lesson.img_url_full}}" alt="..." />
-                    <iframe width="450" height="315" src="https://www.youtube.com/embed/{{lesson.video_url}}" frameborder="0" allowfullscreen style="padding-top: 10px;"></iframe>
+                    <iframe class="video-lesson" width="450" height="315" src="https://www.youtube.com/embed/{{lesson.video_url}}" frameborder="0" allowfullscreen style="padding-top: 10px;"></iframe>
                 </div>
                 
                 <div class="col-md-6">
@@ -81,7 +81,6 @@
                         <a href="{{lesson.presentation}}" type="button" class="btn btn-outline-dark download-bt">
                             <i class="fa-sharp fa-solid fa-file-powerpoint"></i>
                             E-lesson Plan</a>
-
                     </div>
 
                 </div>

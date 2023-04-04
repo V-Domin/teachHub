@@ -22,13 +22,13 @@
 
     <!-- NAV BAR -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
-        <div class="container px-5">
-            <a class="navbar-brand fw-bold" href="{{ url_for('main') }}">teach<span class="hub">Hub</span><img src="/static/img/flag-ukraine_1f1fa-1f1e6.png" class="flag-ukraine" alt=""></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <!-- <i class="bi-list"></i> -->
-                <span class="navbar-toggler-icon"></span>
+        <div class="container px-4">
 
+            <a class="navbar-brand fw-bold logo-name" href="{{ url_for('main') }}">teach<span class="hub">Hub</span><img src="/static/img/flag-ukraine_1f1fa-1f1e6.png" class="flag-ukraine" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0 navbar-links">
                     <li class="nav-item"><a class="nav-link me-lg-3" href="#about">About</a></li>
@@ -36,6 +36,7 @@
                     <li class="nav-item"><a class="nav-link me-lg-3" href="{{ url_for('all_lessons') }}">Lessons</a></li>
                 </ul>
             </div>
+            
         </div>
     </nav>
 
@@ -113,20 +114,20 @@
       <div class="container text-center">
         <div class="row">
           
-          <div class="col-lg-6">
+          <div class="col-lg-6 col-sm-12">
             <img class="img-teacher" src="/static/img/teaching.avif" alt="">
           </div>
 
-          <div class="col-lg-6">
+          <div class="col-lg-6 col-sm-12">
             <div class="row">
 
-              <div class="col col-sm-6 first-row">
+              <div class="col-lg-6 col-sm-12 first-row">
                 <i class="fa-solid fa-gift icon-feat"></i>
                 <h3>Free to Use</h3>
                 <p>All lesson plans are completely free to pay. </p>
               </div>
 
-              <div class="col col-sm-6 first-row">
+              <div class="col-lg-6 col-sm-12 first-row">
                 <i class="fa-solid fa-brain icon-feat"></i>
                 <h3>Variety of Topics </h3>
                 <p>From psychology to IT. For all tastes.</p>
@@ -135,13 +136,13 @@
             </div>
 
             <div class="row">
-              <div class="col col-sm-6">
+              <div class="col-lg-6 col-sm-12 second-row">
                 <i class="fa-sharp fa-solid fa-file-powerpoint icon-feat"></i>
                 <h3>Presentations</h3>
                 <p>Google Presentation to each lesson. </p>
               </div>
 
-              <div class="col col-sm-6">
+              <div class="col-lg-6 col-sm-12 second-row">
                 <i class="fa-solid fa-book-open-reader icon-feat"></i>
                 <h3>Open Source</h3>
                 <p>You can use them however you want - teaching, studying...</p>
